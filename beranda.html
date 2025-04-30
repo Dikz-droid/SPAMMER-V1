@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda - Bio404Xploit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <img src="logo.png" alt="Logo" class="logo">
+  <h1>Selamat datang!</h1>
+  <p>Anda berhasil login ke halaman beranda Bio404Xploit.</p>
+
+  <button onclick="location.href='/'">Spam Whatsapp</button>
+  <button onclick="location.href='/spamTelegram/index.html'">Spam Bot Telegram</button>
+  <button onclick="toggleReport()">Report Masalah</button>
+
+  <div class="report-form" id="reportForm">
+    <textarea id="reportText" placeholder="Tuliskan laporan Anda di sini..."></textarea>
+    <button onclick="sendReport()">Send Report</button>
+    <div id="reportStatus"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
